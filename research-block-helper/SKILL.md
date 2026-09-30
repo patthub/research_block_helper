@@ -1,6 +1,7 @@
 ---
 name: research-block-helper
 description: "Guides a researcher in the social sciences and humanities (SSH) out of a research block. Diagnoses the kind of block in conversation, then proposes small steps the researcher takes themselves and supports them through each one, until they reach a first step back into the work. Use when a researcher is stuck: too many threads after fieldwork or data collection, unable to commit between interpretations of a source, apprehensive about peer review or reviewer comments, unable to start or finish writing a text, or blocked in some other way in their research."
+license: CC-BY-4.0
 metadata:
   version: "4.0.0"
   last_updated: "2026-09-30"

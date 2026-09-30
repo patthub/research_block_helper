@@ -32,15 +32,20 @@ It usually takes 5 to 10 exchanges. You can come back later and tell the model h
 
 ## How to use it
 
-The skill is one file: [`research-block-helper/SKILL.md`](research-block-helper/SKILL.md).
+The helper is a single text file: [`research-block-helper/SKILL.md`](research-block-helper/SKILL.md). It works with any chat model: Claude, ChatGPT, Gemini, Mistral, Le Chat, Copilot, or a local model. You don't install anything, and you don't fill in or edit the file.
 
-**In any chat (Claude, ChatGPT, Gemini, Mistral…).** Copy the whole contents of `SKILL.md` into a new chat and send it. Then describe what is blocking you. You don't fill anything in or edit the file.
+**Paste it into a chat.**
 
-**As a Claude skill.** Download the `research-block-helper` folder, zip it, and upload it in the Skills section of Claude's settings. Claude will then use it on its own when you say you are stuck.
+1. Open [`SKILL.md`](research-block-helper/SKILL.md) and click *Raw*. Select all and copy.
+2. Start a new conversation with the model of your choice.
+3. Paste the whole text. Before sending, add one line at the end: *"Use this as your instructions for our conversation. I'll describe my block next."*
+4. Describe what is blocking you, in your own words.
 
-**In Claude Code.** Copy the folder to `~/.claude/skills/research-block-helper/` for all your projects, or to `.claude/skills/research-block-helper/` for one project.
+If your chat lets you attach files, you can attach `SKILL.md` instead of pasting its text. Send the same line with it.
 
-**As project instructions.** Paste the contents of `SKILL.md` into the instructions of a Claude Project, a custom GPT or a Gemini Gem. Every conversation in that project then starts with the helper.
+**Optional: use it every time.** If you'll come back to the helper often, paste the file's contents into the instructions of a Claude Project, a custom GPT or a Gemini Gem. Every new conversation in that space then starts with the helper already loaded.
+
+**For agent tools (Claude Code and other tools that load `SKILL.md` skills).** Copy the `research-block-helper` folder into your skills directory, for example `~/.claude/skills/` in Claude Code.
 
 The model answers in the language you write in. It also follows your form of address: Polish *Pan/Pani* or *ty*, German *Sie* or *du*.
 
@@ -70,6 +75,10 @@ Once you are back in the work, these skills can help with the work itself. The h
 
 Developed for the workshop *AI for Research Blocks in SSH* (OABN and AI SIG, OPERAS). The version history is at the end of `SKILL.md`.
 
+## License
+
+[CC BY 4.0](LICENSE). You may use, share and adapt the helper, including in your own workshops and courses. Please credit the source.
+
 ---
 
 ## Po polsku
@@ -82,6 +91,14 @@ Developed for the workshop *AI for Research Blocks in SSH* (OABN and AI SIG, OPE
 
 Model nie wykonuje pracy badawczej za ciebie.
 
-**Jak używać:** skopiuj całą zawartość pliku [`research-block-helper/SKILL.md`](research-block-helper/SKILL.md) do nowego czatu, wyślij, a potem opisz, co się dzieje. Model odpowiada po polsku, jeśli piszesz po polsku.
+**Jak używać:** helper działa z każdym modelem: Claude, ChatGPT, Gemini, Mistral i innymi.
+
+1. Otwórz plik [`research-block-helper/SKILL.md`](research-block-helper/SKILL.md), kliknij *Raw* i skopiuj całość.
+2. Wklej to do nowej rozmowy albo dołącz plik jako załącznik. Na końcu dopisz: *„Traktuj to jako instrukcje do naszej rozmowy. Za chwilę opiszę, w czym utknąłem/utknęłam.”*
+3. Opisz własnymi słowami, co się dzieje.
+
+Jeśli piszesz po polsku, model odpowiada po polsku.
+
+Licencja: [CC BY 4.0](LICENSE).
 
 To nie jest terapia. Jeśli opisujesz coś większego niż blokadę w pracy, model powie to wprost i wskaże, gdzie szukać pomocy: promotor, poradnia psychologiczna uczelni, lekarz, bliscy.
